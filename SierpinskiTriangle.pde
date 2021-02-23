@@ -12,7 +12,7 @@ public void setup() {
 }
 
 public void draw() {
-  sierpinskiHex(width/2,height/2,width/3);
+  sierpinskiTriangle(0,0,width);
 }
 
 public void sierpinskiTriangle(float x, float y, float len) {
