@@ -8,7 +8,7 @@ public void setup() {
 }
 public void squares(float x, float y, float len) {
   if (len>=2) {
-    square(x, y, len/2);
+    rect(x, y, len/2,len/2);
     squares(x-len/4, y-len/4, len/2.05);
     squares(x+len/4, y-len/4, len/2.05);
     squares(x-len/4, y+len/4, len/2.05);
