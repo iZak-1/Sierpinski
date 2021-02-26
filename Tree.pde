@@ -4,8 +4,8 @@ float A=0;
 public void setup() {
   size(1000, 1000);
   
-  //colorMode(HSB,1.25*ceil(level(depth)),1,1);
-  colorMode(HSB,1.25*width/2,1,1);
+  colorMode(HSB,1.25*ceil(level(depth)),1,1);
+  //colorMode(HSB,1.25*width/2,1,1);
   frameRate(50);
 }
 
@@ -21,8 +21,8 @@ void draw() {
 public void tree(float x, float y, float len, float angle) {
   strokeWeight(ceil(len/50));
   
-  //stroke(level(len),1,1);
-  stroke(len,1,1);
+  stroke(level(len),1,1);
+  //stroke(len,1,1);
   
   line(x,y,x,y+len/3.5);
   if(len>=depth) {
